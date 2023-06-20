@@ -20,7 +20,7 @@
 
 <body>
     <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
-    <label for="close-menu"  class="close-menu-label"title="close menu"></label>
+    <label for="close-menu" class="close-menu-label" title="close menu"></label>
     <aside class="menu white-bg">
         <div class="main-content menu-content">
             <h1 onclick="getElementById('close-menu').checked = false;">
@@ -281,25 +281,27 @@
             <div class="contact-form">
                 <fieldset class="form-grid">
                     <legend>Contact me</legend>
-                    <div class="form-group">
-                        <label for="first-name">First name</label>
-                        <input type="text" name="first-name" id="first-name" placeholder="Your name">
-                    </div>
-                    <div class="form-group">
-                        <label for="last-name">Last name</label>
-                        <input type="text" name="last-name" id="last-name" placeholder="Your last name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Your email adress">
+                    <div class="contact-initial">
+                        <div class="form-group">
+                            <label for="first-name">First name</label>
+                            <input type="text" name="first-name" id="first-name" placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last name</label>
+                            <input type="text" name="last-name" id="last-name" placeholder="Your last name">
+                        </div>
+                        <div id="emailput" class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Your email adress">
+                        </div>
                     </div>
                     <div class="form-group full-width">
                         <label for="message">Message</label>
-                        <textarea type="message" name="message" id="message" cols="30" rows="10"
+                        <textarea type="message" name="message" id="message" cols="15" rows="5"
                             placeholder="Your message"></textarea>
                     </div>
                     <div class="form-group full-width">
-                        <button type="submit">Send message</button>
+                        <button type="submit" onclick="sub()">Send message</button>
                     </div>
                 </fieldset>
             </div>
@@ -313,6 +315,7 @@
     </footer>
 
     <a class="back-to-top" href="#">⇧</a>
+    <script src="./JS/script.js"></script>
 </body>
 
 </html>
